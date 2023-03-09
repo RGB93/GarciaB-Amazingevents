@@ -5,16 +5,16 @@
      <meta charset="UTF-8" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!-- Link de Bootstrao, debe ir antes que el de style.cc -->
+     <!-- Link de Bootstrap, debe ir antes que el de style.cc -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
      <link rel="shortcut icon" href="./assets/patito_ico.ico" type="image/x-icon" />
      <link rel="stylesheet" href="/assets/styles/style.css">
+     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
      <title>Amazing events</title>
 </head>
 
 <body>
-
      <nav class="navbar navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -22,13 +22,13 @@
             </a>
             <ul class="nav justify-content-end">
                <li class="navitem">
-                 <a class="nav-link active" aria-current="page" href="Events.html">Home</a>
+                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                </li>
                <li class="navitem">
-                 <a class="nav-link" href="Events.html">Upcoming events</a>
+                 <a class="nav-link" href="upcomingEvents.html">Upcoming events</a>
                </li>
                <li class="navitem">
-                 <a class="nav-link" href="Events.html">Past events</a>
+                 <a class="nav-link" href="pastevents.html">Past events</a>
                </li>
                <li class="navitem">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -39,23 +39,13 @@
              </ul>
           </div>
      </nav>
-
-     <div class="container details">
-          <div class="row">
-               <div class="col-lg-6">
-                    <img class="imageDetails img-fluid" src="./assets/img/Museum_Tour.jpg"> 
+     <main class="d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center m-3">
+               <div id="conteinerCard" class="card mb-3 shadow-lg" style="max-width: 100%;">
+                
                </div>
-               <div class="col-lg-6 textDetails">
-                    <h2>Details</h2>
-                    <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in nibh eros. Sed aliquet gravida ornare. Nulla ullamcorper tristique fringilla. Maecenas sagittis pretium purus, at convallis justo commodo vitae. Phasellus ut malesuada tortor. Pellentesque iaculis ligula vitae felis semper, a porttitor diam ultricies. 
-                         <br><br>
-                         In tristique luctus rhoncus. Donec eu tortor nisi. Fusce vel libero enim. Etiam metus risus, scelerisque mattis leo non, aliquet hendrerit eros. Phasellus pharetra, lectus nec iaculis aliquam, eros diam aliquam lectus, sed venenatis metus lacus a nisi. Nam varius posuere elit, ac tristique mauris sodales at. Quisque sed purus lacus. Sed quis maximus magna, sed maximus felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis, ante ut placerat dapibus, enim ipsum molestie ante, at ornare eros odio in augue.
-                    </p>
-               </div>
-          </div>
-     </div>
-      
+             </div>       
+     </main>
      <!-- FOOTER -->
      <footer>
           <div class="bgFooter">
@@ -72,14 +62,15 @@
                </div>
           </div>
      </footer>
+ <!-- END FOOTER -->
+   
 
-     <!-- END FOOTER -->
-</body>
-
-
-     <!-- Script Bootstarp -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-          crossorigin="anonymous"></script>
-
+     <!-- Script-->
+     <script src="./assets/js/data.js"></script>
+     <script src="./assets/js/details.js"></script>
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+     </body>
 </html>
